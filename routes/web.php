@@ -14,6 +14,9 @@ Route::get('/', function () {
     return redirect()->route('login');
 });
 
+
+
+
 // Login dan Register
 Route::middleware('guest')->group(function () {
     Route::get('/register', [AuthController::class, 'showRegister'])
